@@ -4,31 +4,31 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
   <meta name="apple-mobile-web-app-capable" content="yes"/>
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+  <meta name="apple-mobile-web-app-status-bar-style" content="default"/>
   <meta name="apple-mobile-web-app-title" content="Vencimientos"/>
-  <meta name="theme-color" content="#0F172A"/>
+  <meta name="theme-color" content="#F8FAFC"/>
   <link rel="manifest" href="./manifest.json"/>
   <link rel="apple-touch-icon" href="./icon-192.png"/>
   <title>MisVencimientos</title>
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
   <style>
     :root {
-      --bg: #0F172A;
-      --surface: #1E293B;
-      --surface2: #263348;
-      --accent: #38BDF8;
-      --accent2: #818CF8;
-      --text: #F1F5F9;
+      --bg: #F8FAFC;
+      --surface: #FFFFFF;
+      --surface2: #F1F5F9;
+      --accent: #0EA5E9;
+      --accent2: #6366F1;
+      --text: #0F172A;
       --muted: #64748B;
-      --border: #2D3F55;
-      --red: #F87171;
-      --red-bg: #1F1010;
-      --amber: #FBBF24;
-      --amber-bg: #1F1800;
-      --blue: #60A5FA;
-      --blue-bg: #0F1829;
-      --green: #34D399;
-      --green-bg: #0A1F17;
+      --border: #E2E8F0;
+      --red: #EF4444;
+      --red-bg: #FEF2F2;
+      --amber: #D97706;
+      --amber-bg: #FFFBEB;
+      --blue: #2563EB;
+      --blue-bg: #EFF6FF;
+      --green: #059669;
+      --green-bg: #ECFDF5;
       --radius: 16px;
       --safe-top: env(safe-area-inset-top, 0px);
       --safe-bottom: env(safe-area-inset-bottom, 0px);
@@ -65,7 +65,7 @@
     }
     .btn-icon:active { background: var(--surface2); }
     .btn-add {
-      background: var(--accent); border: none; color: #0F172A;
+      background: var(--accent); border: none; color: #FFFFFF;
       border-radius: 12px; padding: 8px 16px; font-size: 13px; font-weight: 700;
       cursor: pointer; font-family: 'DM Sans', sans-serif; transition: opacity 0.15s;
     }
@@ -130,8 +130,8 @@
       font-family: 'DM Sans', sans-serif; transition: background 0.15s;
     }
     .act-btn:active { background: var(--border); }
-    .act-btn.pay { border-color: #1A3D2B; background: var(--green-bg); color: var(--green); }
-    .act-btn.del { border-color: #3D1515; background: var(--red-bg); color: var(--red); }
+    .act-btn.pay { border-color: #A7F3D0; background: var(--green-bg); color: var(--green); }
+    .act-btn.del { border-color: #FECACA; background: var(--red-bg); color: var(--red); }
 
     .item-expanded { border-color: var(--accent2); }
 
@@ -155,7 +155,7 @@
 
     /* Modal */
     .modal-overlay {
-      position: fixed; inset: 0; background: rgba(0,0,0,0.7); z-index: 200;
+      position: fixed; inset: 0; background: rgba(0,0,0,0.4); z-index: 200;
       display: flex; align-items: flex-end; justify-content: center;
       animation: fadeIn 0.2s;
     }
@@ -186,7 +186,7 @@
       font-family: 'DM Sans', sans-serif; font-weight: 500;
     }
     .btn-save {
-      flex: 2; background: var(--accent); border: none; color: #0F172A;
+      flex: 2; background: var(--accent); border: none; color: #FFFFFF;
       border-radius: 14px; padding: 14px; font-size: 15px; font-weight: 700; cursor: pointer;
       font-family: 'DM Sans', sans-serif;
     }
