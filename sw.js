@@ -1,4 +1,4 @@
-const CACHE_NAME = 'misvencimientos-v2';
+const CACHE_NAME = 'misvencimientos-v3';
 const ASSETS = [
   './index.html',
   './manifest.json'
